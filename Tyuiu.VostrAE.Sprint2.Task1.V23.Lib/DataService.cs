@@ -4,7 +4,7 @@ namespace Tyuiu.VostrAE.Sprint2.Task1.V23.Lib
     public class DataService : ISprint2Task1V23
     {
         public bool[] GetLogicOperations(int a, int b, int c, int d)
-        {        
+        {
             bool[] res = new bool[6];
             res[0] = a == b | a == c;
             res[1] = d != c + 246 & a == b;
@@ -16,4 +16,3 @@ namespace Tyuiu.VostrAE.Sprint2.Task1.V23.Lib
         }
     }
 }
-
