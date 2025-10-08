@@ -16,7 +16,7 @@ class Program
         Console.WriteLine("* Результат:                                                              *");
         Console.WriteLine("***************************************************************************");
         if (res) { Console.WriteLine("Точка находится в заштрихованной облати"); }
-        else { Console.WriteLine("Точка находится в заштрихованной облати"); }
+        else { Console.WriteLine("Точка не находится в заштрихованной облати"); }
         Console.ReadKey(); 
     }
 }
