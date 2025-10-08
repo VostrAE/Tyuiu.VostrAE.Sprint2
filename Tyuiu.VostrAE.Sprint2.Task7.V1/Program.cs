@@ -9,11 +9,14 @@ class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("Введите число X:");
         int x = Convert.ToInt32(Console.ReadLine());
-        double res = ds.Calculate(x);
+        Console.WriteLine("Введите число Y:");
+        int y = Convert.ToInt32(Console.ReadLine());
+        bool res = ds.CheckDotInShadedArea(x,y);
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* Результат:                                                              *");
         Console.WriteLine("***************************************************************************");
-        Console.WriteLine("Значение функции= " + res);
-        Console.ReadKey();
+        if (res) { Console.WriteLine("Точка находится в заштрихованной облати"); }
+        else { Console.WriteLine("Точка находится в заштрихованной облати"); }
+        Console.ReadKey(); 
     }
 }
