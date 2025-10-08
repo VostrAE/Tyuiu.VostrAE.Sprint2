@@ -7,13 +7,22 @@ class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine(" Исходные данные:                                                         *");
         Console.WriteLine("***************************************************************************");
-        Console.WriteLine("Введите число X:");
-        int x = Convert.ToInt32(Console.ReadLine());
-        double res = ds.Calculate(x);
+        Console.WriteLine("Введите номер месяца:");
+        int numMouth = Convert.ToInt32(Console.ReadLine());
+        string res;
+        if ((numMouth < 1) || (numMouth > 12))
+        {
+            res = "Введено неверное значение!";
+        }
+        else
+        {
+            res = "Этот месяц состоит из " + ds.FindMonthDaysCount(numMouth) + " дня(ей)";
+        }
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* Результат:                                                              *");
         Console.WriteLine("***************************************************************************");
-        Console.WriteLine("Значение функции= " + res);
+        Console.WriteLine(res);
         Console.ReadKey();
+
     }
 }
